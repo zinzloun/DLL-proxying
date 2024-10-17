@@ -13,7 +13,8 @@
       pip3 install pefile  
 
 ## Lab scenario
-We must identify a DLL that is loaded by Filezilla.exe
+We must identify a DLL that is loaded by Filezilla.exe. There are many tools\techniques to accomplish the task, in my case I used Process Hacker
+
 Target DLL is: C:\Program Files\FileZilla FTP Client\libnettle-8.dll
 Rename the library as libcrypto-2.dll (you can choose the name you prefer, just keep it stealth :))
 Then execute the client app and you get the following error about missing libnettle-8.dll, so we can take advantage of this DLL to perform a side-loading attack.
