@@ -12,9 +12,9 @@ This work is inspired by the following: https://github.com/tothi/dll-hijack-by-p
 ## Requirements
 - Python3 with pip
 - Pefile
-- GCC compiler. I use MSYS2 MINGW32, in case you can follow [this tutorial](https://www.linkedin.com/pulse/installing-gcc-compiler-windows-run-c-program-gitbash-david-michael) to install it.
 
-      pip3 install pefile  
+         pip3 install pefile  
+- GCC compiler. I use MSYS2 MINGW32, in case you can follow [this tutorial](https://code.visualstudio.com/docs/cpp/config-mingw) to install it.
 
 ## Lab scenario
 We must identify a DLL that is loaded by Filezilla.exe. There are many tools\techniques to accomplish the task, in my case I used Process Hacker:
