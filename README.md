@@ -18,9 +18,11 @@ This work is inspired by the following: https://github.com/tothi/dll-hijack-by-p
 
 ## Lab scenario
 We must identify a DLL that is loaded by Filezilla.exe. There are many tools\techniques to accomplish the task, in my case I used Process Hacker:
+
 ![hacker](proc_hacker.png)
 
 I dediced to exploit <b>C:\Program Files\FileZilla FTP Client\libnettle-8.dll</b> as target DLL. First I renamed the library as <b>libcrypto-2.dll</b> (you can choose the name you prefer, just keep it stealth :)). We can verify that the DLL is loaded by Filezilla client executing filezilla.exe; you will get the following error about missing libnettle-8.dll:
+
 ![err](err_fz.png)
 
 The error confirm that we can take advantage of this DLL to perform a side-loading attack.
