@@ -37,8 +37,19 @@ The python script takes care to create the def file containing the exported func
 The final step is to copy our malicious DDL into Filezilla's home folder. Execute filezilla.exe and you should get a powershell back to your local machine:
 ![err](shell.png)
 
+## Lab 2
 
-### Note
+    FortiClient VPN
+        7.2.3.0929
+    Operating system:
+      Name:           Windows 11 (build 22631), 64-bit edition
+      Version:        10.0
+      Platform:       64-bit system
+
+### Identify a suitable DLL using processhacker
+
+
+## Note
 I also tried to implement gcc's execution from the python script directly, using subprocess, but the resulting DLL was smaller, compared to the one eventually created issuing the command from the shell. Indeed once executed, an error related the missing entry point was thrown. At the moment I don't know what is the problem. Any help in this sense is really appreciated</i>.
 
 
