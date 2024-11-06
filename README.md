@@ -47,8 +47,19 @@ The final step is to copy our malicious DDL into Filezilla's home folder. Execut
       Platform:       64-bit system
 
 ### Identify a suitable DLL using processhacker
+![ph](dll_vuln_forti.png)
+
+We are going to use <b>ffmpeg.dll</b> to perform dll-proxy attack. 
+Let's rename it, an error is thrown:
+
 ![ph](ph_dll_forti.png)
-We are going to use
+
+### Exploit
+Again we are going to rename our exploit coded in C (in this repo libnettle-8.c) to <b>ffmpeg.c</b>, then we can proceed as follows to generate the proxy dll containing our malicious payload:
+
+![ph](exploit_forti.png)
+
+Copy the DLL into the Forti Client VPN folder, and execute the app, you should get a shell as showed above.
 
 ## Note
 I also tried to implement gcc's execution from the python script directly, using subprocess, but the resulting DLL was smaller, compared to the one eventually created issuing the command from the shell. Indeed once executed, an error related the missing entry point was thrown. At the moment I don't know what is the problem. Any help in this sense is really appreciated</i>.
