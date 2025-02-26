@@ -1,5 +1,6 @@
 # DLL Proxying side-loading made simple
 ![dll sl img](dll-sl.png)
+
 ## What's that?
 <i>
 DLL Proxying involves to create a malicious DLL which exports all of the functions of the legitimate DLL, and instead of implementing them, just forward the calls to the legitimate DLL.
