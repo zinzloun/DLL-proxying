@@ -2,7 +2,7 @@
 ![dll sl img](dll-sl.png)
 ## What's that?
 <i>
-DLL Proxying create a malicious DLL which exports all of the functions of the legitimate DLL and instead of implementing them, just forward the calls to the legitimate DLL.
+DLL Proxying involves to create a malicious DLL which exports all of the functions of the legitimate DLL, and instead of implementing them, just forward the calls to the legitimate DLL.
 This way the target vulnerable application behaves normally, without crashing, executing the malicious code silently in the background*
 </i>
 
