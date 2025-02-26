@@ -1,4 +1,4 @@
-# DLL Side-loading made simple
+# DLL Proxying side-loading made simple
 ![dll sl img](dll-sl.png)
 ## Credits
 This work is inspired by the following: https://github.com/tothi/dll-hijack-by-proxying, that I encourage you to read in case you don't know how this attack works.
