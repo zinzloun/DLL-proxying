@@ -1,7 +1,11 @@
 # DLL Proxying side-loading made simple
 ![dll sl img](dll-sl.png)
-## Credits
-This work is inspired by the following: https://github.com/tothi/dll-hijack-by-proxying, that I encourage you to read in case you don't know how this attack works.
+## What's that?
+<i>
+DLL Proxying create a malicious DLL which exports all of the functions of the legitimate DLL and instead of implementing them, just forward the calls to the legitimate DLL.
+This way the target vulnerable application behaves normally, without crashing, executing the malicious code silently in the background*
+</i>
+
 ## Lab setup
     FileZilla Client
       Version:          3.67.1
@@ -64,4 +68,6 @@ Copy the DLL into the Forti Client VPN folder, and execute the app, you should g
 ## Note
 I also tried to implement gcc's execution from the python script directly, using subprocess, but the resulting DLL was smaller, compared to the one eventually created issuing the command from the shell. Indeed once executed, an error related the missing entry point was thrown. At the moment I don't know what is the problem. Any help is really appreciated, so in case, please open an issue</i>.
 
+## Credits
+* This work is inspired by the following: https://github.com/tothi/dll-hijack-by-proxying, that I encourage you to read in case you don't know how this attack works.
 
