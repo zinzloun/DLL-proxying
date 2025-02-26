@@ -70,5 +70,5 @@ Copy the DLL into the Forti Client VPN folder, and execute the app, you should g
 I also tried to implement gcc's execution from the python script directly, using subprocess, but the resulting DLL was smaller, compared to the one eventually created issuing the command from the shell. Indeed once executed, an error related the missing entry point was thrown. At the moment I don't know what is the problem. Any help is really appreciated, so in case, please open an issue</i>.
 
 ## Credits
-* This work is inspired by the following: https://github.com/tothi/dll-hijack-by-proxying, that I encourage you to read in case you don't know how this attack works.
+* This work is inspired by https://github.com/tothi/dll-hijack-by-proxying, and I encourage you to check it out for all the details about this attack.
 
